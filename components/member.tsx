@@ -9,12 +9,12 @@ interface Props {
 }
 const Member: React.FC<Props> = ({ id, name, socialId, link }) => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <Image
         src={`/assets/team/perfil.png`}
         alt={name}
-        width={266}
-        height={455}
+        width={66}
+        height={255}
       />
       <div className="text-2xl xl:text:3xl">{name}</div>
       <div className="text-xl">
