@@ -9,8 +9,8 @@ const AboutUs: React.FC = () => {
         </p>
       </div>
       <div className="container mx-auto px-11 text-center mt-28">
-        <h2>Our team</h2>
-        <div className="mt-2">the &ldquo;spac-ops&rdquo;</div>
+        <h2>Nuestro equipo</h2>
+        <div className="mt-2">&ldquo;spac-ops&rdquo;</div>
         <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grd-cols-5 gap-6 lg:gap-20">
           <Member id="lala" name="lala" socialId="@lala" link=""/>
           <Member id="lolo" name="lolo" socialId="@lolo" link=""/>
