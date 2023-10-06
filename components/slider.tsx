@@ -1,8 +1,8 @@
 'use client'
 
 import { useCallback, useContext, useRef } from "react";
-import { SizeContext } from "../utils/size-observer.tsx";
-import useAnimationFrame from "../utils/use-animation-frame.ts";
+import { SizeContext } from "../utils/size-observer";
+import useAnimationFrame from "../utils/use-animation-frame";
 
 interface Props {
   initialOffsetX: number;

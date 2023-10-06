@@ -1,4 +1,4 @@
-import SliderContainer, { SliderItem } from "./slider.tsx";
+import SliderContainer, { SliderItem } from "./slider";
 import Image from "next/image"
 
 const ClientLogos: React.FC = () => {
