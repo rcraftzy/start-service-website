@@ -1,4 +1,5 @@
 import ScrollObserver from '@/styles/utils/scroll-observer'
+import SizeObserver from '@/utils/size-observer'
 import '../styles/globals.css'
 
 export const metadata = {
@@ -20,9 +21,11 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
       </head>
       <body>
-        <ScrollObserver>
-          {children}
-        </ScrollObserver>
+        <SizeObserver>
+          <ScrollObserver>
+            {children}
+          </ScrollObserver>
+        </SizeObserver>
       </body>
     </html>
   )
