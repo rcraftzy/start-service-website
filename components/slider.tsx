@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useContext, useRef } from "react";
+import { ReactNode, useCallback, useContext, useRef } from "react";
 import { SizeContext } from "../utils/size-observer";
 import useAnimationFrame from "../utils/use-animation-frame";
 
@@ -8,6 +8,7 @@ interface Props {
   initialOffsetX: number;
   className: string;
   contentWidth: number;
+  children: ReactNode
 }
 
 const SliderContainer: React.FC<Props> = ({
@@ -54,6 +55,7 @@ const SliderContainer: React.FC<Props> = ({
 
 interface ItemProps {
   width: number;
+  children: ReactNode
 }
 
 export const SliderItem: React.FC<ItemProps> = ({
